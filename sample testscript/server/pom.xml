@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.photon.phresco.load</groupId>
-  <artifactId>d7noneas-drupal7</artifactId>
-  <version>dfd</version>
-  <packaging>pom</packaging>
-  <name>LoadTest-Server</name>
-  <build>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.photon.phresco.load</groupId>
+    <artifactId>d7noneas-drupal7</artifactId>
+    <packaging>pom</packaging>
+    <name>LoadTest-Server</name>
+    <version>dfd</version>
+    <build>
     <plugins>
       <plugin>
         <groupId>com.google.code.sortpom</groupId>
@@ -21,10 +21,10 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
+       <plugin>
         <groupId>com.lazerycode.jmeter</groupId>
         <artifactId>jmeter-maven-plugin</artifactId>
-        <version>1.8.22</version>
+        <version>1.8.23</version>
         <executions>
           <execution>
             <id>jmeter-tests</id>
@@ -36,33 +36,37 @@
         </executions>
         <dependencies>
           <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.9</version>
-          </dependency>
-          <dependency>
-            <groupId>kg.apc</groupId>
-            <artifactId>cmdrunner</artifactId>
-            <version>1.0.1</version>
-          </dependency>
-          <dependency>
-            <groupId>kg.apc</groupId>
-            <artifactId>JMeterPlugins</artifactId>
-            <version>1.0.0</version>
-          </dependency>
-          <dependency>
             <groupId>kg.apc</groupId>
             <artifactId>JMeterPlugins</artifactId>
             <version>1.0.0</version>
           </dependency>
         </dependencies>
         <configuration>
+          <!-- <ignoreResultFailures>true</ignoreResultFailures> -->
+          <testResultsTimestamp>false</testResultsTimestamp>
           <testFilesDirectory>tests/</testFilesDirectory>
-          <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
-          <resultFilesName>load-server</resultFilesName>
-          <testFilesIncluded xmlns="" xmlns:ns2="http://maven.apache.org/POM/4.0.0">
+          <testFilesIncluded>
             <jMeterTestFile>PhrescoFrameWork_TestPlan.jmx</jMeterTestFile>
           </testFilesIncluded>
+          <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
+          <resultFilesName>
+            <resultName>SaaS-2kTerms</resultName>
+          </resultFilesName>	
+		  
+        <pluginTypes>
+           <types>ThreadsStateOverTime</types>
+           <types>BytesThroughputOverTime</types>
+           <types>HitsPerSecond</types>
+           <types>LatenciesOverTime</types>
+           <types>ResponseCodesPerSecond</types>
+           <types>ResponseTimesDistribution</types>
+           <types>ResponseTimesOverTime</types>
+           <types>ResponseTimesPercentiles</types>
+           <types>ThroughputVsThreads</types>
+           <types>TimesVsThreads</types>
+           <types>TransactionsPerSecond</types>
+        </pluginTypes>
+		  
         </configuration>
       </plugin>
     </plugins>

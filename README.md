@@ -4,16 +4,16 @@ perf-plugin
 This is an customized jmeter maven plugin
 
 
-Difference between the existing and customized jmeter maven plugin
+Advantages of customized jmeter maven plugin
 ===================================================================
 
-    1.In the existing plugin we are not able to specify test result name but we are to give the result name in customized plugin
+    1.We can specify testresult name
 
-    2.In the existing plugin we are not able to grenerate the graphs as image file but here we can the graphs
+    2.It will generate the graphs as images
 
-    3.In customized jmeter maven plugin we can specify the test result directory but it's not possible in existing one.
+    3.We can specify the test result directory 
   
-      If want to specify the use the below tag
+      If want to specify the test result directory use the below tag
     
        <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
 

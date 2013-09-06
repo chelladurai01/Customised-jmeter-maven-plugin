@@ -69,3 +69,6 @@ Graphs
              <types>TransactionsPerSecond</types>
           </pluginTypes>
   
+Sample pox.xml and testScript
+
+        +[Find example](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/pom.xml)

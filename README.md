@@ -70,5 +70,5 @@ This is an customized jmeter maven plugin
           </pluginTypes>
         
 ## Sample TestScript
-[Sample TestScript (W3C Draft)](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/)
+[Sample TestScript](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/)
 <- You can find the sample testscript here

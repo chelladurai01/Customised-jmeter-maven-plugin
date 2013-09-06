@@ -5,6 +5,7 @@ This is an customized jmeter maven plugin
 
 
 Difference between the existing and customized jmeter maven plugin
+===================================================================
 
     1.In the existing plugin we are not able to specify test result name but we are to give the result name in customized plugin
 
@@ -17,6 +18,7 @@ Difference between the existing and customized jmeter maven plugin
        <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
 
 Specifying the test result name for executing multiple jmx file
+================================================================
 
     In this the Number of jmx  and the result name count should be equal
     First test result name is assigned to first jmx file (ex.for "sample1.jmx" testresult name is "test1").
@@ -34,6 +36,7 @@ Specifying the test result name for executing multiple jmx file
            </configuration>
            
 Graphs
+======
 
     Using the "JMeterPlugins" we are generating graphs and the listed below are the available plugin types.
   
@@ -70,5 +73,6 @@ Graphs
           </pluginTypes>
   
 Sample pox.xml and testScript
+=============================
 
         +[Find example](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/pom.xml)

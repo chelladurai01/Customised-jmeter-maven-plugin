@@ -58,7 +58,7 @@ Graphs
       15.PageDataExtractorOverTime
       
     To generate graph we should specify atleast one plugin types  like below mentioned
-       <pluginTypes>
+        <pluginTypes>
              <types>ThreadsStateOverTime</types>
              <types>BytesThroughputOverTime</types>
              <types>HitsPerSecond</types>
@@ -71,8 +71,7 @@ Graphs
              <types>TimesVsThreads</types>
              <types>TransactionsPerSecond</types>
           </pluginTypes>
-  
-Sample pox.xml and testScript
-=============================
-
-        +[Find example](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/pom.xml)
+        
+## Sample TestScript
+[Sample TestScript (W3C Draft)](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/)
+<- Pretty much required reading if you want to do anything with CSP

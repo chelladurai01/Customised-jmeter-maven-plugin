@@ -4,8 +4,7 @@ perf-plugin
 This is an customized jmeter maven plugin
 
 
-Advantages of customized jmeter maven plugin
-===================================================================
+## Advantages of customized jmeter maven plugin
 
     1.We can specify testresult name
 
@@ -17,8 +16,7 @@ Advantages of customized jmeter maven plugin
     
        <resultFilesDirectory>results/jmeter/</resultFilesDirectory>
 
-Specifying the test result name for executing multiple jmx file
-================================================================
+## Specifying the test result name for executing multiple jmx file
 
     In this the Number of jmx  and the result name count should be equal
     First test result name is assigned to first jmx file (ex.for "sample1.jmx" testresult name is "test1").
@@ -35,8 +33,7 @@ Specifying the test result name for executing multiple jmx file
               </resultFilesName>	
            </configuration>
            
-Graphs
-======
+## Graphs
 
     Using the "JMeterPlugins" we are generating graphs and the listed below are the available plugin types.
   
@@ -74,4 +71,4 @@ Graphs
         
 ## Sample TestScript
 [Sample TestScript (W3C Draft)](https://github.com/chelladurai01/perf-plugin/blob/master/sample%20testscript/server/)
-<- Pretty much required reading if you want to do anything with CSP
+<- You can find the sample testscript here
